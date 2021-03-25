@@ -84,10 +84,10 @@ if iscell(stages)
     stages_num(strcmp(stages, definition{5})) = 5; % REM
 elseif isnumeric(stages)
     stages_num(stages == definition(1)) = 0; % Wake
-    stages_num(stages == definition(2)) = 1; % Wake
-    stages_num(stages == definition(3)) = 2; % Wake
-    stages_num(stages == definition(4)) = 3; % Wake
-    stages_num(stages == definition(5)) = 5; % Wake
+    stages_num(stages == definition(2)) = 1; % N1
+    stages_num(stages == definition(3)) = 2; % N2
+    stages_num(stages == definition(4)) = 3; % N3
+    stages_num(stages == definition(5)) = 5; % REM
 end
 C.sleepstage = stages_num;
 
