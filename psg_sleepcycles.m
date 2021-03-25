@@ -39,7 +39,7 @@
 % History: 
 %     05/03/2020 - Created
 
-function C = psg_sleepcyles(stages, definition, varargin)
+function C = psg_sleepcycles(stages, definition, varargin)
 
 % check input
 if ~any(size(stages)) == 1
